@@ -1,0 +1,24 @@
+POST http://localhost:3000/segments?table=rey_analytics HTTP/1.1
+Content-Type: application/json
+
+{
+    "user_id": 2,
+    "segment": "rumahan",
+    "value": "10",
+    "is_sync": false
+}
+
+###
+
+GET http://localhost:3000/segments?table=rey_analytics HTTP/1.1
+
+###
+
+PUT http://localhost:3000/segments/2?table=rey_analytics HTTP/1.1
+Content-Type: application/json
+
+{
+    "segment": "rumahan_edit",
+    "value": "123",
+    "is_sync": false
+}
